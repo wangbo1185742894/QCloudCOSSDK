@@ -25,7 +25,7 @@ QCloudCore--腾讯云iOS-SDK Foundation。提供腾讯云iOS相关SDK的基础�
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "QCloud Terminal Team" => "QCloudTerminalTeam" }
-
+  s.source           = { :git => "https://github.com/wangbo1185742894/QCloudCOSSDK.git", :tag => s.version.to_s }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'

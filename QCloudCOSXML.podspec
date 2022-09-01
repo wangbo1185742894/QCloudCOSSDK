@@ -6,7 +6,7 @@ s.version              = "5.5.3"
   s.homepage         = "https://cloud.tencent.com/"
   s.license          = 'MIT'
   s.author           = { "QCloud Terminal Team" => "QCloudTerminalTeam" }
-  s.source           = { :git => "https://github.com/tencentyun/qcloud-sdk-ios.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/wangbo1185742894/QCloudCOSSDK.git", :tag => s.version.to_s }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.ios.deployment_target = '8.0'
