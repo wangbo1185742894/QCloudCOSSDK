@@ -531,12 +531,12 @@ NSString* const QCloudUploadResumeDataKey = @"__QCloudUploadResumeDataKey__";
     [self.requestCacheArray compact];
          //先判断是不是有请求禁止取消
     NSPointerArray *tmpRequestCacheArray = [self.requestCacheArray copy];
-    for (QCloudHTTPRequest* request  in tmpRequestCacheArray.allObjects) {
-            if (request.forbidCancelled) {
-                *error = [NSError qcloud_errorWithCode:QCloudNetworkErrorUnsupportOperationError message:@"UnsupportOperation:无法暂停当前的上传请求，因为complete请求已经发出"];
-                    return nil;
-                }
-    }
+//    for (QCloudHTTPRequest* request  in tmpRequestCacheArray.allObjects) {
+//            if (request.forbidCancelled) {
+//                *error = [NSError qcloud_errorWithCode:QCloudNetworkErrorUnsupportOperationError message:@"UnsupportOperation:无法暂停当前的上传请求，因为complete请求已经发出"];
+//                    return nil;
+//                }
+//    }
     //延迟取消 让函数先返回
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         [self cancel];
