@@ -127,9 +127,5 @@ NS_ASSUME_NONNULL_BEGIN
 
     return fileds;
 }
-
-- (void) configTaskResume{
-    self.forbidCancelled = YES;
-}
 @end
 NS_ASSUME_NONNULL_END
